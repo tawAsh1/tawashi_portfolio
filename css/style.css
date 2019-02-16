@@ -1,0 +1,431 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li fieldset,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    -webkit-font-smoothing: antialiased
+}
+
+body,
+html {
+    height: 100%
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 46px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 20px
+}
+
+h6 {
+    font-size: 18px
+}
+
+p {
+    font-size: 16px
+}
+
+em {
+    font-style: italic
+}
+
+strong {
+    font-weight: 700
+}
+
+button {
+    -webkit-appearance: none;
+    background: 0 0;
+    border: 0;
+    outline: 0
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+header div {
+    position: absolute;
+    /* 位置指定 */
+    top: 50%;
+    /* 親要素の半分下にずらす */
+    left: 50%;
+    /* 親要素の半分右にずらす */
+    transform: translateY(-50%) translateX(-50%);
+    vertical-align: middle;
+    line-height: 3em;
+    text-transform: uppercase;
+}
+
+header h4 {
+    line-height: 2em;
+    font-weight: bold;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header div ul {
+    line-height: 3em;
+    text-transform: capitalize;
+}
+
+header a {
+    font-size: 30px;
+}
+
+header #description {
+    padding-bottom: 0.5em;
+}
+
+header #han {
+    padding-top: 5.5em;
+}
+
+.content {
+    color: #202020;
+}
+
+
+section.about {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: skyblue;
+    text-align: center;
+    position: relative;
+}
+
+section.history {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: aliceblue;
+    text-align: center;
+    position: relative;
+}
+
+section.works {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: antiquewhite;
+    text-align: center;
+    position: relative;
+}
+
+section.awards {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: blanchedalmond;
+    text-align: center;
+    position: relative;
+}
+
+footer {
+    background-color: #2d3e52;
+    color: white;
+}
+
+footer li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    float: left;
+    padding-left: 1em;
+}
+
+footer {
+    overflow: hidden;
+}
+
+footer p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    float: right;
+    padding-right: 1em;
+}
+
+section img {
+    width: 10%;
+    height: 10%;
+    border-radius: 30px;
+}
+
+section h2,
+img,
+p {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+section p {
+    font-size: 25px;
+}
+
+section h2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.title {
+    width: 70%;
+    text-align: left;
+    font-size: 28px;
+    float: left;
+}
+
+.awards .title {
+    width: 90%;
+}
+
+.date {
+    font-size: 20px;
+    float: right;
+}
+
+.icon {
+    float: left;
+    padding-right: 1em;
+    border-radius: 0px;
+    width: 12%;
+    height: 12%;
+}
+
+.works .icon {
+    float: right;
+    padding-left: 1em;
+    border-radius: 0px;
+    width: 14%;
+    height: 14%;
+}
+
+.works .description {
+    width: 85%;
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    clear: none;
+    line-height: 1.3em;
+    padding-bottom: 0em;
+}
+
+.works .memo {
+    text-align: left;
+    font-size: 15px;
+    float: left;
+    clear: left;
+    line-height: 1.3em;
+    padding-top: 0.3em;
+}
+
+.works .date {
+    font-size: 20px;
+    float: right;
+}
+
+.description {
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    clear: right;
+    line-height: 1.3em;
+}
+
+.memo {
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    clear: right;
+}
+
+.history li {
+    overflow: hidden;
+    margin-bottom: 2em;
+
+}
+
+.awards li {
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.works li {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+section p {
+    font-size: 20px;
+}
+
+section ol {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+section ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
