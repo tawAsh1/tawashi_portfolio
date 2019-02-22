@@ -344,6 +344,154 @@ $historySectionTxColor: #fff;
 }
 
 /* -^------------------^-
+ * Works Section
+ * ---------------------- */
+$worksSectionBgColor: $mainColor - 10;
+$worksSectionTxColor: #fff;
+
+#works-section {
+    position: relative;
+
+    color: $worksSectionTxColor;
+    background: $worksSectionBgColor;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 320px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: $historySectionBgColor;
+
+        @include bp( md ) {
+            height: 160px;
+        }
+    }
+}
+#works-section-inner {
+    padding-top: 16px;
+
+    font-family: sofia-pro;
+
+    @include bp( md ) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+#works-section-text {
+    h2 {
+        margin: 0 0 40px;
+        padding-left: 0;
+        box-sizing: border-box;
+
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        font-style: normal;
+
+        @include bp( md ) {
+            margin-right: 72px;
+
+            font-size: 64px;
+            text-align: left;
+            border-bottom: solid 8px $worksSectionTxColor;
+        }
+    }
+}
+#works-section-products {
+
+    @include bp( lg ) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .works-section-product {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 16px;
+        box-sizing: border-box;
+
+        text-align: center;
+        border: solid 8px #fff;
+
+        @include bp( lg ) {
+            width: 48%;
+        }
+
+        & ~ .works-section-product {
+            margin-top: 32px;
+
+            @include bp( lg ) {
+                margin-top: 0;
+            }
+        }
+
+        &:nth-child( 2 ) ~ .works-section-product {
+            margin-top: 32px;
+        }
+        
+        .works-section-product-inner {
+            width: 100%;
+            height: 100%;
+            padding: 32px 24px;
+            box-sizing: border-box;
+
+            color: #888;
+            background: #fff;
+
+            h3 {
+                margin: 0;
+
+                font-size: 22px;
+                line-height: 1.2;
+            }
+            h4 {
+                margin: 0 0 8px;
+
+                font-size: 16px;
+                font-weight: 400;
+            }
+            img {
+                width: 40%;
+                margin: 32px auto 24px;
+                display: block;
+            }
+            p {
+                margin-bottom: 8px;
+
+                font-size: 14px;
+                line-height: 1.4;
+            }
+            .language {
+                span {
+                    padding: 4px 8px;
+                    display: inline-block;
+
+                    color: #fff;
+                    background: $mainColor;
+                    font-size: 13px;
+                    line-height: 13px;
+                    border-radius: 4px;
+
+                    & ~ span {
+                        margin-left: 8px;
+                    }
+
+                    i {
+                        padding-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* -^------------------^-
  * Footer
  * ---------------------- */
 $footerBgColor: #384150;
@@ -351,6 +499,8 @@ $footerTxColor: #fff;
 
 #footer {
     width: 100%;
+    position: relative;
+    z-index: 10;
 
     color: $footerTxColor;
     background: $footerBgColor;
