@@ -238,15 +238,27 @@ main section .section-wrap {
 }
 
 #history-section-text h2 {
+  width: 100%;
+  max-width: 640px;
   margin: 0 auto 40px;
-  text-align: center;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
   font-size: 48px;
   font-weight: 700;
   font-style: normal;
 }
 
+@media screen and (min-width: 576px) {
+  #history-section-text h2 {
+    padding-left: 112px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #history-section-text h2 {
+    padding-left: 164px;
     font-size: 64px;
   }
 }

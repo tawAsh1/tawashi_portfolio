@@ -236,14 +236,23 @@ $historySectionTxColor: #fff;
     font-family: sofia-pro;
 
     h2 {
+        width: 100%;
+        max-width: 640px;
         margin: 0 auto 40px;
+        padding-left: 0;
+        box-sizing: border-box;
 
-        text-align: center;
+        text-align: left;
         font-size: 48px;
         font-weight: 700;
         font-style: normal;
 
+        @include bp( sm ) {
+            padding-left: 112px;
+        }
         @include bp( md ) {
+            padding-left: 164px;
+
             font-size: 64px;
         }
     }
