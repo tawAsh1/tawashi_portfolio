@@ -129,3 +129,92 @@ main {
         }
     }
 }
+
+/* -^------------------^-
+ * Profile Section
+ * ---------------------- */
+$profileSectionBgColor: #fff;
+$profileSectionTxColor: $mainTxColor;
+
+#profile-section {
+    color: $profileSectionTxColor;
+    background: $profileSectionBgColor;
+}
+#profile-section-inner {
+    padding-bottom: 50%;
+
+    @include bp( md ) {
+        padding-bottom: 104px;
+    }
+
+    svg {
+        width: 50%;
+        max-width: 560px;
+        margin: auto;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        z-index: 0;
+
+        @include bp( md ) {
+            left: 5%;
+            right: auto;
+        }
+    }
+    path {
+        fill: $mainColor;
+    }
+}
+#profile-section-text {
+    position: relative;
+    z-index: 10;
+
+    font-family: sofia-pro;
+
+    h2 {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto 40px;
+
+        text-align: center;
+        font-size: 48px;
+
+        @include bp( md ) {
+            margin: 0 5% 40px auto;
+
+            font-size: 64px;
+            text-align: left;
+        }
+    }
+    dl {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        @include bp( md ) {
+            margin: 0 5% 0 auto;
+        }
+
+        dt {
+            width: 25%;
+            padding-left: 3px;
+
+            font-size: 18px;
+            font-weight: 700;
+            text-shadow: 0 0 2px rgba( 255, 255, 255, .3 );
+        }
+        dd {
+            width: 70%;
+            margin: 0 0 16px;
+            padding-top: 6px;
+            display: block;
+
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}

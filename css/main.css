@@ -123,3 +123,102 @@ main section .section-wrap {
     font-size: 20px;
   }
 }
+
+/* -^------------------^-
+ * Profile Section
+ * ---------------------- */
+#profile-section {
+  color: #666;
+  background: #fff;
+}
+
+#profile-section-inner {
+  padding-bottom: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  #profile-section-inner {
+    padding-bottom: 104px;
+  }
+}
+
+#profile-section-inner svg {
+  width: 50%;
+  max-width: 560px;
+  margin: auto;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+@media screen and (min-width: 768px) {
+  #profile-section-inner svg {
+    left: 5%;
+    right: auto;
+  }
+}
+
+#profile-section-inner path {
+  fill: #cb6266;
+}
+
+#profile-section-text {
+  position: relative;
+  z-index: 10;
+  font-family: sofia-pro;
+}
+
+#profile-section-text h2 {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  #profile-section-text h2 {
+    margin: 0 5% 40px auto;
+    font-size: 64px;
+    text-align: left;
+  }
+}
+
+#profile-section-text dl {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  #profile-section-text dl {
+    margin: 0 5% 0 auto;
+  }
+}
+
+#profile-section-text dl dt {
+  width: 25%;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+#profile-section-text dl dd {
+  width: 70%;
+  margin: 0 0 16px;
+  padding-top: 6px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
