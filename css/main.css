@@ -488,7 +488,7 @@ main section .section-wrap {
 
 #works-section-products .works-section-product .works-section-product-inner img {
   width: 40%;
-  margin: 32px auto 24px;
+  margin: 24px auto;
   display: block;
 }
 
@@ -499,6 +499,7 @@ main section .section-wrap {
 }
 
 #works-section-products .works-section-product .works-section-product-inner .language span {
+  margin-bottom: 4px;
   padding: 4px 8px;
   display: inline-block;
   color: #fff;
