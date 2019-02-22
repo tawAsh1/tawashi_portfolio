@@ -224,6 +224,127 @@ main section .section-wrap {
 }
 
 /* -^------------------^-
+ * History Section
+ * ---------------------- */
+#history-section {
+  color: #fff;
+  background: #cb6266;
+}
+
+#history-section-text {
+  position: relative;
+  z-index: 10;
+  font-family: sofia-pro;
+}
+
+#history-section-text h2 {
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  #history-section-text h2 {
+    font-size: 64px;
+  }
+}
+
+#history-section-timeline {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+#history-section-timeline .history-section-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#history-section-timeline .history-section-block .history-section-date {
+  min-width: 80px;
+  margin: 0;
+  position: relative;
+  font-family: sofia-pro;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  #history-section-timeline .history-section-block .history-section-date {
+    min-width: 104px;
+  }
+}
+
+#history-section-timeline .history-section-block .history-section-date:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+#history-section-timeline .history-section-block .history-section-content {
+  padding: 4px 0 48px 32px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  #history-section-timeline .history-section-block .history-section-content {
+    padding: 4px 0 48px 64px;
+  }
+}
+
+#history-section-timeline .history-section-block .history-section-content:before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+#history-section-timeline .history-section-block .history-section-content h3, #history-section-timeline .history-section-block .history-section-content h4 {
+  margin: 0;
+  font-family: sofia-pro;
+  font-style: normal;
+}
+
+#history-section-timeline .history-section-block .history-section-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#history-section-timeline .history-section-block .history-section-content h4 {
+  margin: 8px 0 4px;
+  padding: 4px 8px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  border: solid 2px #fff;
+}
+
+#history-section-timeline .history-section-block .history-section-content h4 ~ h4 {
+  margin-top: 48px;
+}
+
+#history-section-timeline .history-section-block .history-section-content p {
+  margin: 16px 0;
+}
+
+/* -^------------------^-
  * Footer
  * ---------------------- */
 #footer {

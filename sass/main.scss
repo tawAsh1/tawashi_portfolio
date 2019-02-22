@@ -220,6 +220,121 @@ $profileSectionTxColor: $mainTxColor;
 }
 
 /* -^------------------^-
+ * History Section
+ * ---------------------- */
+$historySectionBgColor: $mainColor;
+$historySectionTxColor: #fff;
+
+#history-section {
+    color: $historySectionTxColor;
+    background: $historySectionBgColor;
+}
+#history-section-text {
+    position: relative;
+    z-index: 10;
+
+    font-family: sofia-pro;
+
+    h2 {
+        margin: 0 auto 40px;
+
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        font-style: normal;
+
+        @include bp( md ) {
+            font-size: 64px;
+        }
+    }
+}
+#history-section-timeline {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+
+    .history-section-block {
+        display: flex;
+        justify-content: flex-start;
+
+        .history-section-date {
+            min-width: 80px;
+            margin: 0;
+            position: relative;
+
+            font-family: sofia-pro;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 28px;
+
+            @include bp( md ) {
+                min-width: 104px;
+            }
+
+            &:before {
+                content: "";
+                width: 16px;
+                height: 16px;
+                display: block;
+                position: absolute;
+                top: 16px;
+                right: -10px;
+
+                background: $historySectionTxColor;
+                border-radius: 50%;
+            }
+        }
+        .history-section-content {
+            padding: 4px 0 48px 32px;
+            position: relative;
+
+            @include bp( md ) {
+                padding: 4px 0 48px 64px;
+            }
+
+            &:before {
+                content: "";
+                width: 4px;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                background: $historySectionTxColor;
+            }
+
+            h3, h4 {
+                margin: 0;
+
+                font-family: sofia-pro;
+                font-style: normal;
+            }
+            h3 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            h4 {
+                margin: 8px 0 4px;
+                padding: 4px 8px;
+                display: inline-block;
+
+                font-size: 14px;
+                font-weight: 400;
+                border: solid 2px #fff;
+
+                & ~ h4 {
+                    margin-top: 48px;
+                }
+            }
+            p {
+                margin: 16px 0;
+            }
+        }
+    }
+}
+
+/* -^------------------^-
  * Footer
  * ---------------------- */
 $footerBgColor: #384150;
