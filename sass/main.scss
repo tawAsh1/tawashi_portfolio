@@ -1,1 +1,131 @@
 @charset 'utf-8';
+
+// Colors
+$mainColor: #cb6266;
+$mainTxColor: #666;
+
+// Define
+$maxWidth: 1200px;
+
+// Breakpoint
+$breakPoints: (
+    'sm':  'screen and (min-width: 576px)',
+    'md':  'screen and (min-width: 768px)',
+    'lg':  'screen and (min-width: 992px)',
+    'xl':  'screen and (min-width: 1200px)',
+) !default;
+
+@mixin bp( $breakPointType: md ) {
+    @media #{ map-get( $breakPoints, $breakPointType ) } {
+        @content;
+    }
+}
+
+/* -^------------------^-
+ * Common
+ * ---------------------- */
+main {
+    section {
+        .section-wrap {
+            width: 100%;
+            max-width: $maxWidth;
+            margin: 0 auto;
+            padding: 72px 16px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+
+            @include bp( md ) {
+                padding: 104px 32px;
+            }
+        }
+    }
+}
+
+/* -^------------------^-
+ * Parallax
+ * ---------------------- */
+#parallax {
+    .parallax-section {
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        z-index: -100;
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            object-fit: cover;
+        }
+    }
+    #hero-section-parallax {
+        height: 100vh;
+        top: 0;
+
+        transform: translate3d( 0, 0, 0 );
+
+        img {
+            filter: brightness( 100% );
+        }
+    }
+}
+
+/* -^------------------^-
+ * Hero Section
+ * ---------------------- */
+#hero-section {
+    width: 100%;
+    min-height: 100vh;
+}
+#hero-section-inner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#hero-section-text {
+    width: 100%;
+
+    color: #fff;
+    font-family: sofia-pro, sans-serif;
+    font-style: normal;
+    text-align: center;
+
+    @include bp( md ) {
+        text-align: left;
+    }
+
+    h1 {
+        margin: 0;
+
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 1.3;
+
+        @include bp( sm ) {
+            font-size: 64px;
+        }
+        @include bp( md ) {
+            font-size: 80px;
+        }
+    }
+    p {
+        margin: 0 0 0 4px;
+        font-size: 13px;
+        font-weight: 400;
+
+        @include bp( sm ) {
+            font-size: 18px;
+        }
+        @include bp( md ) {
+            font-size: 20px;
+        }
+    }
+}
