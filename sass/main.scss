@@ -416,6 +416,13 @@ $worksSectionTxColor: #fff;
         padding: 16px;
         box-sizing: border-box;
 
+        background: repeating-linear-gradient(
+            -45deg, 
+            rgba( 255, 255, 255, .08 ) 0, 
+            rgba( 255, 255, 255, .08 ) 10px, 
+            transparent 10px, 
+            transparent 20px
+        );
         text-align: center;
         border: solid 8px #fff;
 

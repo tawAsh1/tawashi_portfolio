@@ -437,6 +437,9 @@ main section .section-wrap {
   padding: 16px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background: -webkit-repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 10px, transparent 10px, transparent 20px);
+  background: -o-repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 10px, transparent 10px, transparent 20px);
+  background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 10px, transparent 10px, transparent 20px);
   text-align: center;
   border: solid 8px #fff;
 }
