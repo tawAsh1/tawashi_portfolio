@@ -222,3 +222,132 @@ main section .section-wrap {
   font-size: 13px;
   font-weight: 400;
 }
+
+/* -^------------------^-
+ * Footer
+ * ---------------------- */
+#footer {
+  width: 100%;
+  color: #fff;
+  background: #384150;
+}
+
+#footer-inner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 80px 16px 240px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sofia-pro;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+  #footer-inner {
+    padding: 80px 24px 240px;
+  }
+}
+
+#footer-inner a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#footer-inner #socialLinks {
+  width: 100%;
+  max-width: 280px;
+  height: 32px;
+  margin: 0 auto 32px;
+}
+
+@media screen and (min-width: 768px) {
+  #footer-inner #socialLinks {
+    margin-right: 0;
+  }
+}
+
+#footer-inner #socialLinks ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#footer-inner #socialLinks ul li {
+  width: 32px;
+  height: 32px;
+  color: #384150;
+  background: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  -webkit-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
+}
+
+#footer-inner #socialLinks ul li:hover {
+  color: #fff;
+}
+
+#footer-inner #socialLinks ul li[data-social="github"]:hover {
+  background: #24292e;
+}
+
+#footer-inner #socialLinks ul li[data-social="facebook"]:hover {
+  background: #4267b2;
+}
+
+#footer-inner #socialLinks ul li[data-social="twitter"]:hover {
+  background: #1da1f2;
+}
+
+#footer-inner #socialLinks ul li[data-social="wantedly"] {
+  font-family: 'Raleway', sans-serif;
+  line-height: 34px;
+}
+
+#footer-inner #socialLinks ul li[data-social="wantedly"]:hover {
+  background: #00a4bb;
+}
+
+#footer-inner #socialLinks ul li[data-social="linkedin"]:hover {
+  background: #0077b5;
+}
+
+#footer-inner #socialLinks ul li[data-social="blog"]:hover {
+  background: #cb6266;
+}
+
+#footer-inner #socialLinks ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#footer-inner #socialLinks ul li i {
+  font-style: normal;
+}
+
+#footer-inner #copyright {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #footer-inner #copyright {
+    text-align: right;
+  }
+}
+
+#footer-inner #copyright small {
+  font-size: 14px;
+}
